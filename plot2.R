@@ -13,7 +13,7 @@ plot2<-function (){
   print ("Done")
   ## find the subset required by the task
   power_cons_subset_df=power_cons_df[power_cons_df$Date >="2007-02-01" & power_cons_df$Date <="2007-02-02",]
-  ## print a histogram
+
   plot(strptime(paste(power_cons_subset_df$Date, power_cons_subset_df$Time), "%Y-%m-%d %H:%M:%S")   , power_cons_subset_df$Global_active_power , type="l", xlab="", ylab="Global Active Power (kilowatts)")
   print ("plot2 complete")
  
