@@ -1,11 +1,11 @@
 plot4<-function (){
   
   ## Dowload the file and unzip
-  ##download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", destfile="household_power_consumption.zip", method="curl")
-  ##unzip("household_power_consumption.zip")
+  download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", destfile="household_power_consumption.zip", method="curl")
+  unzip("household_power_consumption.zip")
   ## read the file
   print ("Reading household_power_consumption.txt file... ")
-  ##power_cons_df=read.csv("household_power_consumption.txt", na.string="?", sep=";")
+  power_cons_df=read.csv("household_power_consumption.txt", na.string="?", sep=";")
   print ("Done")
   ## convert from Factor to Date
   print("Converting to Date type")
